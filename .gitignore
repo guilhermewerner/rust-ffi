@@ -1,0 +1,16 @@
+# Binary Files
+
+Binaries/
+
+# ImGui State Files
+
+imgui.ini
+
+# Cargo Files
+
+Cargo.lock
+Engine/Source/Header.h
+
+# Mac OSX
+
+.DS_Store
