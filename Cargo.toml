@@ -1,0 +1,17 @@
+[package]
+name = "Library"
+version = "0.0.1"
+description = "Rust Library"
+repository = "https://github.com/GuilhermeWerner/Libraryr"
+authors = ["GuilhermeWerner <guilhermeqwerner@gmail.com>"]
+license = "MIT"
+edition = "2018"
+publish = false
+
+[lib]
+name="Library"
+crate-type = ["cdylib"]
+path = "Source/Library.rs"
+
+[dependencies]
+libc = "0.2.0"
