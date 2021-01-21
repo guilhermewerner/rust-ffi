@@ -10,7 +10,7 @@ publish = false
 
 [lib]
 name="Library"
-crate-type = ["cdylib"]
+crate-type = ["staticlib", "cdylib", "rlib"]
 path = "Source/Library.rs"
 
 [dependencies]
