@@ -95,3 +95,50 @@ project "C"
         runtime "Release"
         buildoptions "/MD"
         optimize "on"
+
+project "CSharp"
+    location "Examples/CSharp"
+    kind "ConsoleApp"
+    language "C#"
+
+    targetdir ("Binaries/" .. outputDir)
+    objdir ("Intermediate/")
+
+    files
+    {
+        "Examples/%{prj.name}/**.cs",
+    }
+
+    includedirs
+    {
+        "Source"
+    }
+
+    libdirs
+    {
+        "Binaries/%{cfg.buildcfg}"
+    }
+
+    filter "system:windows"
+        staticruntime "On"
+        systemversion "latest"
+
+        defines
+        {
+            "WINDOWS_PLATFORM"
+        }
+
+        links
+        {
+            "Library.dll.lib"
+        }
+
+    filter { "system:windows", "configurations:debug" }
+        runtime "Debug"
+        buildoptions "/MDd"
+        symbols "on"
+
+    filter  { "system:windows", "configurations:release" }
+        runtime "Release"
+        buildoptions "/MD"
+        optimize "on"

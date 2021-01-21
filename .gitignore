@@ -17,6 +17,7 @@ Source/Library.h
 
 *.sln
 *.vcxproj
+*.csproj
 *.filters
 *.user
 
