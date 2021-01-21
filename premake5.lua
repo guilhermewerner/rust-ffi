@@ -43,12 +43,12 @@ project "Cpp"
             "Library.dll.lib"
         }
 
-    filter "configurations:debug"
+    filter { "system:windows", "configurations:debug" }
         runtime "Debug"
         buildoptions "/MDd"
         symbols "on"
 
-    filter "configurations:release"
+    filter  { "system:windows", "configurations:release" }
         runtime "Release"
         buildoptions "/MD"
         optimize "on"
@@ -86,12 +86,12 @@ project "C"
             "Library.dll.lib"
         }
 
-    filter "configurations:debug"
-		runtime "Debug"
+    filter { "system:windows", "configurations:debug" }
+        runtime "Debug"
         buildoptions "/MDd"
-		symbols "on"
+        symbols "on"
 
-	filter "configurations:release"
-		runtime "Release"
+    filter  { "system:windows", "configurations:release" }
+        runtime "Release"
         buildoptions "/MD"
-		optimize "on"
+        optimize "on"
