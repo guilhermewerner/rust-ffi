@@ -11,8 +11,6 @@ extern float Subtract(float Num1, float Num2);
 
 int main()
 {
-    cout << "Rust Library" << "\n\n";
-
     int num1 = 1;
     int num2 = 2;
 
@@ -20,6 +18,4 @@ int main()
     cout << "Subtracted: " << Library::Subtract(num1, num2) << "\n";
     cout << "Multiplied: " << Library::Multiply(num1, num2) << "\n";
     cout << "Divided: " << Library::Divide(num1, num2) << "\n";
-
-    cout << "\n";
 }

@@ -9,15 +9,11 @@ extern float Subtract(float Num1, float Num2);
 
 int main()
 {
-    printf("Rust Library\n");
-
     int num1 = 1;
     int num2 = 2;
 
-    printf("\nAdded: %f", Add(num1, num2));
-    printf("\nSubtracted: %f", Subtract(num1, num2));
-    printf("\nMultiplied: %f", Multiply(num1, num2));
-    printf("\nDivided: %f", Divide(num1, num2));
-
-    printf("\n\n");
+    printf("Added: %f\n", Add(num1, num2));
+    printf("Subtracted: %f\n", Subtract(num1, num2));
+    printf("Multiplied: %f\n", Multiply(num1, num2));
+    printf("Divided: %f\n", Divide(num1, num2));
 }
