@@ -1,15 +1,33 @@
 # Binary Files
 
 Binaries/
-
-# ImGui State Files
-
-imgui.ini
+Intermediate/
 
 # Cargo Files
 
 Cargo.lock
+
+# FFI Bindings
+
 Source/Library.h
+
+# Visual Studio Project Files
+
+.vs/
+
+*.sln
+*.vcxproj
+*.filters
+*.user
+
+# CMake Project Files
+
+Makefile
+
+# Xcode Project Files
+
+*.xcodeproj
+*.xcworkspace
 
 # Mac OSX
 

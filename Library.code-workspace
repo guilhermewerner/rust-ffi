@@ -6,7 +6,8 @@
 	],
 	"settings": {
         "files.associations": {
-            "*.toml": "properties"
-        }
+			"*.sln": "properties",
+			"*.toml": "properties"
+		}
     }
 }
