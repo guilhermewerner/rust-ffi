@@ -128,11 +128,6 @@ project "CSharp"
             "WINDOWS_PLATFORM"
         }
 
-        links
-        {
-            "Library.dll.lib"
-        }
-
     filter { "system:windows", "configurations:debug" }
         runtime "Debug"
         buildoptions "/MDd"
