@@ -9,7 +9,7 @@ imgui.ini
 # Cargo Files
 
 Cargo.lock
-Engine/Source/Header.h
+Source/Library.h
 
 # Mac OSX
 
