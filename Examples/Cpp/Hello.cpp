@@ -22,6 +22,4 @@ int main()
     cout << "Divided: " << Library::Divide(num1, num2) << "\n";
 
     cout << "\n";
-
-    system("PAUSE");
 }

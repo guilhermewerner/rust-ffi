@@ -20,6 +20,4 @@ int main()
     printf("\nDivided: %f", Divide(num1, num2));
 
     printf("\n\n");
-
-    system("PAUSE");
 }
