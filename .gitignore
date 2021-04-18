@@ -9,7 +9,7 @@ Cargo.lock
 
 # FFI Bindings
 
-Source/Library.h
+Header.h
 
 # Visual Studio Project Files
 
@@ -24,6 +24,7 @@ Source/Library.h
 # CMake Project Files
 
 Makefile
+*.make
 
 # Xcode Project Files
 

@@ -34,7 +34,6 @@ project "Cpp"
     }
 
     filter "system:windows"
-        cppdialect "C++17"
         staticruntime "On"
         systemversion "latest"
 
@@ -45,13 +44,23 @@ project "Cpp"
 
     filter { "system:windows", "configurations:debug" }
         runtime "Debug"
-        buildoptions "/MDd"
         symbols "on"
 
     filter  { "system:windows", "configurations:release" }
         runtime "Release"
-        buildoptions "/MD"
         optimize "on"
+
+    filter "system:linux"
+        links
+        {
+            "Library"
+        }
+
+    filter "system:darwin"
+        links
+        {
+            "Library"
+        }
 
 project "C"
     location "Examples/C"
@@ -88,17 +97,36 @@ project "C"
 
     filter { "system:windows", "configurations:debug" }
         runtime "Debug"
-        buildoptions "/MDd"
         symbols "on"
 
     filter  { "system:windows", "configurations:release" }
         runtime "Release"
-        buildoptions "/MD"
         optimize "on"
+
+    filter "system:linux"
+        links
+        {
+            "Library"
+        }
+
+    filter "system:darwin"
+        links
+        {
+            "Library"
+        }
 
 project "CSharp"
     location "Examples/CSharp"
-    kind "ConsoleApp"
+
+    filter { "system:windows" }
+        kind "ConsoleApp"
+    filter { "system:linux" }
+        kind "None"
+    filter { "system:darwin" }
+         kind "None"
+
+    filter {}
+
     language "C#"
 
     targetdir ("Binaries/" .. outputDir)
@@ -125,15 +153,13 @@ project "CSharp"
 
         defines
         {
-            "WINDOWS_PLATFORM"
+            "PLATFORM_WINDOWS"
         }
 
     filter { "system:windows", "configurations:debug" }
         runtime "Debug"
-        buildoptions "/MDd"
         symbols "on"
 
     filter  { "system:windows", "configurations:release" }
         runtime "Release"
-        buildoptions "/MD"
         optimize "on"
