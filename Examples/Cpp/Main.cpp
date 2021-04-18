@@ -6,6 +6,15 @@ using namespace std;
 
 int main()
 {
+    // Hello
+    char *result = Library::Hello("C++");
+
+    cout << result << "\n";
+
+    Library::DeallocString(result);
+
+    // Operations
+
     int num1 = 1;
     int num2 = 2;
 

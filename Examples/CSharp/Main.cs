@@ -12,6 +12,9 @@ namespace CSharp
         #endif
 
         [DllImport(Library)]
+        static extern string Hello(string input);
+
+        [DllImport(Library)]
         static extern float Add(float Num1, float Num2);
 
         [DllImport(Library)]
@@ -25,6 +28,14 @@ namespace CSharp
 
         static void Main(string[] args)
         {
+            // Hello
+
+            string result = Hello("C#");
+
+            Console.WriteLine(result);
+
+            // Operations
+
             int num1 = 1;
             int num2 = 2;
 

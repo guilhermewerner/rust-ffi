@@ -4,6 +4,16 @@
 
 int main()
 {
+    // Hello
+
+    char *result = Hello("C");
+
+    printf("%s\n", result);
+
+    DeallocString(result);
+
+    // Operations
+
     int num1 = 1;
     int num2 = 2;
 

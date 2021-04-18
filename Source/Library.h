@@ -18,7 +18,14 @@ namespace Library
 
         float Add(float num1, float num2);
 
+        /**
+         * Dealloc a string pointer.
+         */
+        void DeallocString(char *ptr);
+
         float Divide(float num1, float num2);
+
+        char *Hello(char *input);
 
         float Multiply(float num1, float num2);
 
