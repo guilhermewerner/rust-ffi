@@ -4,11 +4,6 @@
 
 using namespace std;
 
-extern float Add(float Num1, float Num2);
-extern float Divide(float Num1, float Num2);
-extern float Multiply(float Num1, float Num2);
-extern float Subtract(float Num1, float Num2);
-
 int main()
 {
     int num1 = 1;

@@ -5,7 +5,7 @@ namespace CSharp
 {
     class Program
     {
-        #if WINDOWS_PLATFORM
+        #if PLATFORM_WINDOWS
             const string Library = "Library";
         #else
             const string Library = "libLibrary";
