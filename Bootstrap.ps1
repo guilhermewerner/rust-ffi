@@ -2,7 +2,7 @@
 
 echo "Installing dependencies..."
 
-cargo install cbindgen
+#cargo install cbindgen
 
 echo "Generating bindings..."
 
